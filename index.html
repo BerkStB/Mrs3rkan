@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MrS3rkan</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background: radial-gradient(circle at bottom, #000010, #000000);
+      color: white;
+      font-family: Arial, sans-serif;
+      overflow: hidden;
+    }
+
+    /* Yıldız efekti */
+    body::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: transparent url("https://www.transparenttextures.com/patterns/stardust.png") repeat;
+      animation: moveStars 60s linear infinite;
+    }
+
+    @keyframes moveStars {
+      from {background-position: 0 0;}
+      to {background-position: -10000px 5000px;}
+    }
+
+    .profile {
+      text-align: center;
+      z-index: 1;
+    }
+
+    .profile img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 3px solid white;
+      box-shadow: 0 0 25px rgba(255,255,255,0.8);
+    }
+
+    .profile h1 {
+      margin-top: 15px;
+      font-size: 28px;
+      text-shadow: 0 0 10px rgba(255,255,255,0.6);
+    }
+
+    .socials {
+      display: flex;
+      gap: 30px;
+      margin-top: 40px;
+      z-index: 1;
+    }
+
+    .socials a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.05);
+      transition: 0.3s;
+    }
+
+    .socials a:hover {
+      background: rgba(255,255,255,0.2);
+      transform: scale(1.1);
+    }
+
+    .socials img {
+      width: 40px;
+      height: 40px;
+    }
+  </style>
+</head>
+<body>
+  <div class="profile">
+    <!-- Profil resmi -->
+    <img src="https://i.ibb.co/Cst9QP1T/serkana-bi.webp" alt="Profil Resmi">
+    <h1>MrS3rkan</h1>
+  </div>
+
+  <!-- Sosyal medya linkleri -->
+  <div class="socials">
+    <a href="https://www.tiktok.com/@mr_s3rkan" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png" alt="TikTok">
+    </a>
+    <a href="https://www.instagram.com/s321rkn/?hl=en" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram">
+    </a>
+    <a href="https://kick.com/mrs3rkan/about" target="_blank">
+      <img src="https://i.ibb.co/BKKQtWSy/download.png" alt="Kick">
+    </a>
+    <a href="https://www.youtube.com/@MrS3rkan" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube">
+    </a>
+  </div>
+</body>
+</html>
